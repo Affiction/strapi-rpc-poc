@@ -9,6 +9,7 @@
     "deploy": "strapi deploy",
     "dev": "strapi develop",
     "develop": "strapi develop",
+    "mock:upstream": "node scripts/mock-upstream.js",
     "start": "strapi start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
@@ -16,6 +17,7 @@
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.49.0",
+    "@strapi/plugin-documentation": "5.49.0",
     "@strapi/plugin-users-permissions": "5.49.0",
     "@strapi/strapi": "5.49.0",
     "better-sqlite3": "12.8.0",
@@ -23,7 +25,9 @@
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
     "strapi-plugin-config-sync": "^3.2.0",
-    "styled-components": "^6.0.0"
+    "styled-components": "^6.0.0",
+    "zod": "^4.4.3",
+    "zod-openapi": "^6.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
